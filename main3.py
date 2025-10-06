@@ -101,3 +101,52 @@ for i in range(1, 6):           # ligne (1 à 5)
     for j in range(1, 6):       # colonne (1 à 5)
         print(f"{i} x {j} = {i * j}")
     print("------")             # séparation entre chaque table
+
+# TODO: Use a while loop to print numbers from 1 to 10
+i = 1
+while i <= 10:
+    print(i)
+    i = i+1
+# TODO: Create a guessing game using a while loop
+# (generate a random number and let the user guess until correct)
+import random
+
+# TODO: Create a guessing game using a while loop
+# (generate a random number and let the user guess until correct)
+
+# Générer un nombre aléatoire entre 1 et 10
+nombre_secret = random.randint(1, 10)
+
+# Initialiser la variable de l'utilisateur
+guess = None
+
+print("🎲 Bienvenue dans le jeu de devinette !")
+print("Devine le nombre (entre 1 et 10) :")
+
+# Tant que la réponse est incorrecte
+while guess != nombre_secret:
+    # Demander à l'utilisateur de deviner
+    guess = int(input("👉 Entre ton nombre : "))
+
+    # Vérifier la réponse
+    if guess < nombre_secret:
+        print("Trop petit 😅, essaie encore !")
+    elif guess > nombre_secret:
+        print("Trop grand 😮, réessaie !")
+    else:
+        print("🎉 Bravo ! Tu as trouvé le nombre :", nombre_secret)
+
+# TODO: Use a while loop to calculate the factorial of a number
+n = 5
+fact = 1
+i = 1
+
+while i <= n:
+    fact = fact * i
+    i += 1
+
+print("Le factoriel de", n, "est :", fact)
+
+# TODO: Implement a simple calculator using a while loop
+# (continue calculating until the user chooses to exit)
+
